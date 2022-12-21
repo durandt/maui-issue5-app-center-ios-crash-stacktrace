@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vms="clr-namespace:maui_issue5_app_center_ios_crash_stacktrace.ViewModels"
+             x:DataType="vms:MainViewModel"
+             x:Class="maui_issue5_app_center_ios_crash_stacktrace.MainPage"
+             Title="iOS AppCenter Crash Stacktrace">
+
+    <ScrollView x:Name="_ScrollView">
+        <StackLayout Padding="16" Spacing="16">
+            <StackLayout>
+                <Label FontSize="Large" FontAttributes="Bold" Text="Generate crash" />
+            </StackLayout>
+
+            <StackLayout Spacing="4" Orientation="Horizontal">
+                <Button Text="Generate crash" Clicked="GenerateCrashButton_OnClicked" />
+            </StackLayout>
+
+            <StackLayout Spacing="4" Orientation="Horizontal">
+                <Button Text="Generate crash async" Clicked="GenerateCrashAsyncButton_OnClicked" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+
